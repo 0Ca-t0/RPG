@@ -28,7 +28,7 @@ class Game {
     //게임을 시작하는 메서드
 
     for (int i = 0; i < monsters.length && character.health > 0; i++) {
-      Monster nowMonster = monsters[i];
+      Monster nowMonster = getRandomMonster();
       print('새로운 몬스터가 등장했습니다: ${nowMonster.name}');
       print('                                              ');
 
